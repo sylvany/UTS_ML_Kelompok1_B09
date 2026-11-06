@@ -10,7 +10,7 @@ saat evaluasi, bukan sebagai fitur.
 
 ## Isi repo
 
-- `Project_B09_Milestone1.ipynb` : notebook utama
+- `UTS_Project_B09_Milestone1.ipynb` : notebook utama
 - `hasil_milestone1/` : tabel hasil dan catatan eksperimen
 - `Laporan_UTS_ML_Kel1_B09.pdf` : laporan uts
 
