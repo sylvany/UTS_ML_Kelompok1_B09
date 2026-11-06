@@ -1,0 +1,21 @@
+Model,PCA,Kriteria,Selisih rata-rata,SD antarfold,Fold PCA lebih baik,Jumlah fold
+gmm,PCA 90%,ROC-AUC proxy,0.0624,0.0242,5,5
+gmm,PCA 90%,PR-AUC injeksi (rata-rata),-0.4774,0.0291,0,5
+gmm,PCA 95%,ROC-AUC proxy,0.0872,0.0224,5,5
+gmm,PCA 95%,PR-AUC injeksi (rata-rata),-0.4403,0.0136,0,5
+iforest,PCA 90%,ROC-AUC proxy,-0.0779,0.0161,0,5
+iforest,PCA 90%,PR-AUC injeksi (rata-rata),0.0052,0.0074,3,5
+iforest,PCA 95%,ROC-AUC proxy,-0.0397,0.0122,0,5
+iforest,PCA 95%,PR-AUC injeksi (rata-rata),0.0433,0.0055,5,5
+kmeans,PCA 90%,ROC-AUC proxy,-0.0581,0.0419,0,5
+kmeans,PCA 90%,PR-AUC injeksi (rata-rata),-0.1478,0.0089,0,5
+kmeans,PCA 95%,ROC-AUC proxy,-0.0171,0.0368,1,5
+kmeans,PCA 95%,PR-AUC injeksi (rata-rata),-0.1143,0.0047,0,5
+lof,PCA 90%,ROC-AUC proxy,0.0392,0.0071,5,5
+lof,PCA 90%,PR-AUC injeksi (rata-rata),-0.2821,0.0107,0,5
+lof,PCA 95%,ROC-AUC proxy,0.0189,0.0043,5,5
+lof,PCA 95%,PR-AUC injeksi (rata-rata),-0.2304,0.0086,0,5
+ocsvm,PCA 90%,ROC-AUC proxy,-0.0167,0.0046,0,5
+ocsvm,PCA 90%,PR-AUC injeksi (rata-rata),-0.2326,0.0106,0,5
+ocsvm,PCA 95%,ROC-AUC proxy,-0.0108,0.0029,0,5
+ocsvm,PCA 95%,PR-AUC injeksi (rata-rata),-0.1848,0.0062,0,5

@@ -1,0 +1,6 @@
+Model,Peran,Metode validasi,Precision,Recall,F1-score,ROC-AUC,PR-AUC,Waktu total per fold (detik)
+Isolation Forest (baseline),Baseline,Stratified 5-Fold CV (pool latih 80%),0.4195 ± 0.0290,0.1277 ± 0.0086,0.1958 ± 0.0129,0.5909 ± 0.0191,0.2613 ± 0.0189,0.7
+Local Outlier Factor (kandidat 1),Kandidat 1,Stratified 5-Fold CV (pool latih 80%),0.1912 ± 0.0140,0.0612 ± 0.0053,0.0927 ± 0.0076,0.5225 ± 0.0105,0.1750 ± 0.0046,7.8
+One-Class SVM (kandidat 2),Kandidat 2,Stratified 5-Fold CV (pool latih 80%),0.3948 ± 0.0154,0.1278 ± 0.0048,0.1931 ± 0.0072,0.6868 ± 0.0160,0.2916 ± 0.0134,1.1
+K-Means jarak centroid (kandidat 3),Kandidat 3,Stratified 5-Fold CV (pool latih 80%),0.4367 ± 0.0117,0.1344 ± 0.0067,0.2055 ± 0.0086,0.6999 ± 0.0034,0.3211 ± 0.0085,13.4
+Ensemble rata-rata persentil (4 detektor),Ensemble,Stratified 5-Fold CV (pool latih 80%),0.3236 ± 0.0122,0.1009 ± 0.0063,0.1537 ± 0.0078,0.6524 ± 0.0075,0.2579 ± 0.0060,24.5

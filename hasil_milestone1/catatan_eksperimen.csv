@@ -1,0 +1,17 @@
+Tahap,Konfigurasi,Seed,Berkas keluaran
+Pemisahan data,"Uji 20% terkunci, stratifikasi failure_risk_level; sisanya fit 75% dan validasi 25%",random_state=42,data_uji_terkunci.csv
+Preprocessing,"Imputasi median + StandardScaler, 21 fitur numerik, dipelajari dari data latih",-,data_setelah_preprocessing_fit.csv
+Baseline,"Isolation Forest, n_estimators=100, contamination=0.05",random_state=42,hasil_validasi_pertemuan4.csv
+Kandidat 1,"LOF, n_neighbors=20, novelty=True, subsampel 30000",RandomState(42),hasil_validasi_pertemuan4.csv
+Kandidat 2,"One-Class SVM, RBF, nu=0.05, subsampel 10000",RandomState(42),hasil_validasi_pertemuan4.csv
+Kandidat 3,"K-Means jarak centroid, K dipilih Silhouette dari 2 sampai 10",random_state=42,evaluasi_k_kmeans.csv
+Validasi,"Stratified 5-Fold CV pada pool latih 80%, preprocessing dan K dipelajari ulang per fold",random_state=42,hasil_cv_per_fold.csv
+Ablasi fitur,Isolation Forest dan K-Means (K=2) dengan dan tanpa 3 fitur turunan,random_state=42,ablasi_fitur_turunan.csv
+Ensemble,"Rata-rata persentil skor 4 detektor, ambang persentil ke-95 sampel referensi",RandomState(42+fold),perbandingan_baseline_ensemble.csv
+PCA,"PCA(n_components=0.90 atau 0.95, svd_solver=full) di dalam Pipeline setelah imputasi dan StandardScaler",random_state=42,p6_pca_vs_tanpa_pca.csv
+Clustering,"K-Means K=2..8 (n_init=3), K_PROFIL=4; ARI antara seed 42 dan 7; Gaussian Mixture; DBSCAN",42 dan 7,"p6_evaluasi_k.csv, p6_profil_cluster.csv"
+Grid detektor,"39 konfigurasi: Isolation Forest, LOF, One-Class SVM, K-Means, Gaussian Mixture x 3 pilihan PCA",42,p6_hasil_grid_per_fold.csv
+Anomali sintetis,"[('ringan', 1, 2.0), ('sedang', 3, 3.0)], 5% dari ukuran fold validasi",100*fold+indeks level,p6_hasil_grid_per_fold.csv
+Pemilihan,"Peringkat gabungan pada fold [1, 2, 3]; konfirmasi pada fold [4, 5]",-,"p6_peringkat_fold_pilih.csv, p6_konfirmasi_fold_4_5.csv"
+Acuan supervised,"Logistic Regression dan Decision Tree depth 4, hanya diagnosis",42,p6_acuan_supervised.csv
+Pemeriksaan leakage,Pemeriksaan otomatis dan peragaan bocor vs Pipeline,42,p6_demo_leakage.csv
